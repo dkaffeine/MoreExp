@@ -1,0 +1,11 @@
+name: MoreExp
+main: me.dkaffeine.moreexp.MoreExpMain
+version: 2.4
+
+commands:
+    moreexp:
+        description: General command for this plugin
+        usage: /moreexp <command>
+    mex:
+        description: General command for this plugin
+        usage: /mex <command>        

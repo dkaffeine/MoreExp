@@ -1,0 +1,90 @@
+Version 2.3
+* Plugin compiled with Bukkit 1.3.1 R0.1
+* [Bug Fix] Reverted option defined in version 2.2b
+* [Bug Fix] Cleaned outputs and create one log instance instead of two
+* [Feature] Added configuration of bottle'o enchantment
+* [Known bug] Spawned mob by eggs do not drop experience (but spawned mob by spawners still)
+* [Feature] Added manual de-activation of mob experience modification (flag DisableMobFlag)
+* [Feature] Added manual de-activation of bottle'o enchantment (flag DisableBottleFlag)
+* [TODO] Implement experience modification when someone mines mineral
+
+Version 2.2b
+* [Bug Fix] Now, typing /mex set <mob> <value> is the same as /mex set <mob> <value> 0
+
+Version 2.2
+* Plugin compiled with Bukkit 1.2.5 R5
+* [Bug Fix] Making command from console could result in permission deny
+* [Bug Fix] Fixed /mex shortcut
+* [Feature] Opped players now can use commands
+* Modify output command for /moreexp info <Mob> 
+
+Version 2.1
+* Cleaned some parts of the code
+* [Debug] Added gained experience printout
+* [Bug Fix] Ocelot was not read in data file
+* [Bug Fix] Fixed disable message
+* [Feature] Added output information for specific mob or option, by using /moreexp info [mob/option]
+* [Feature] When a player does not have a permission, log it
+* [Feature] Added shortcut command /mex and modified associated outputs
+* Modify default value so that it corresponds to vanilla plugin (for Slime / Magma cube, small size is taken into account)
+* [Experimental] Added broadcast message when a player kills another one
+
+Version 2.0
+* [Bug Fix] Corrected random experience drops
+* [Bug Fix] Modified export method so that exported file is sorted (Java 7 fix)
+* [Feature] Added debug flag inside the configuration file
+
+Version 1.10
+* [Feature requested] Added random experience drops
+* Cleaned experience computation
+* Overloaded /moreexp set with 4 arguments (to set experience mob from XP to XP + XPvariable)
+* [TODO] Modify experience output (to see variable experience)
+
+Version 1.9
+* [Feature requested] Added experience multiplicator configuration / use
+* [Feature requested] Added command /moreexp xpgain to fix experience multiplicator
+* Added permission moreexp.adm.xpgain to set experience multiplicator
+
+Version 1.8.1
+* Put debug flag to false
+
+Version 1.8
+* Added missing mob blaze (thanks for IHHI)
+
+Version 1.7 :
+* Compiled against CB 1.2.5 (RB)
+* Added debug functionnality (need to recompile source to activate) to see in which world does the monster die
+
+Version 1.6 :
+* Added version display for /moreexp et /moreexp info
+* Moved permissions moreexp.adm.reload and moreexp.adm.save respectively for /moreexp reload and /moreexp save
+* Moved permission moreexp.adm.give for /moreexp give
+* Moved permission moreexp.adm.reset for /moreexp reset
+* Moved permission moreexp.adm.set for /moreexp set
+* [Bug Fix / Feature] Added option DropsOnlyFromPlayers (with default value true) to allow experience drops only when a player kills the mob (thx filbert666) 
+
+Version 1.5 :
+* [Feature requested] Added command /moreexp reset (with permission moreexp.reset) to reset experience of a player
+
+Version 1.4 :
+* Fixed bug when config.xml was not present (empty xml load)
+
+Version 1.3 :
+* Added GNU GPL v3 license text into
+* Added an output message when configure particular mob experience (plus console log)
+* Added name of user who sets particular mob xp in console log
+* Fixed permission bug moreexp.set for /moreexp set (was moreexp.save)
+* [Feature requested] Added command /moreexp give (with permission moreexp.give) to grant experience levels to players
+
+Version 1.2 :
+* Moved creation of blank file config.xml into settings class (now there's only one place where name exists)
+* Added aliases /moreexp config load (for /moreexp reload) and /moreexp config save (for /moreexp save). These two aliases use same permission nodes
+* Status changed to release (tested ALL mobs)
+
+Version 1.1 Beta :
+* Corrected creation of file config.xml
+* Avoid creation of file config.properties
+* Optimized some portions of code
+
+Version 1.0 Beta :
+* First release of the plugin
