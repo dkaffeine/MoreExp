@@ -1,6 +1,6 @@
 name: MoreExp
 main: me.dkaffeine.moreexp.MoreExpMain
-version: 2.4
+version: 3.5r
 
 commands:
     moreexp:
