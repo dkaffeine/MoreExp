@@ -97,6 +97,12 @@ public class MoreExpSettings
 	
 	public static int VillagerExp;
 	public static int VillagerExpRand;
+	
+	public static int WitchExp;
+	public static int WitchExpRand;
+	
+	public static int WitherExp;
+	public static int WitherExpRand;
 
 	public static Random generator = new Random();
 	
@@ -184,6 +190,12 @@ public class MoreExpSettings
 		
 		VillagerExp = getMobXP("Villager", 0);
 		VillagerExpRand = getMobXP("VillagerRand", 0);
+		
+		WitchExp = getMobXP("Witch", 15);
+		WitchExpRand = getMobXP("WitchRand", 0);
+		
+		WitherExp = getMobXP("Wither", 0);
+		WitherExpRand = getMobXP("WitherRand", 0);
 		
 		WolfExp = getMobXP("Wolf", 1);
 		WolfExpRand = getMobXP("WolfRand", 2);
