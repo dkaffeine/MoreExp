@@ -23,6 +23,7 @@ public class MoreExpMain extends JavaPlugin
 		getServer().getPluginManager().registerEvents(blocklistener, this);
 		MoreExpSettings.OutputLog("Plugin enabled.");
 		MoreExpSettings.OutputLog("Developed by Dkaffeine (adrien.semin@gmail.com)");
+		MoreExpSettings.OutputLog("3.5 update by CodeDonut purpledawn.net");
 
 		new File(maindirectory).mkdir();
 
@@ -140,8 +141,8 @@ public class MoreExpMain extends JavaPlugin
 						sender.sendMessage(ChatColor.WHITE + "Iron golem : " + ChatColor.AQUA + MoreExpSettings.IronGolemExp + ChatColor.WHITE + " Magma cube : " + ChatColor.AQUA + MoreExpSettings.MagmaCubeExp + ChatColor.WHITE + " Mushroom cow : " + ChatColor.AQUA + MoreExpSettings.MushroomCowExp);
 						sender.sendMessage(ChatColor.WHITE + "Ocelot : " + ChatColor.AQUA + MoreExpSettings.OcelotExp + ChatColor.WHITE + " Pig : " + ChatColor.AQUA + MoreExpSettings.PigExp + ChatColor.WHITE + " Sheep : " + ChatColor.AQUA + MoreExpSettings.SheepExp);
 						sender.sendMessage(ChatColor.WHITE + "Silverfish : " + ChatColor.AQUA + MoreExpSettings.SilverfishExp + ChatColor.WHITE + " Skeleton : " + ChatColor.AQUA + MoreExpSettings.SkeletonExp + ChatColor.WHITE + " Slime : " + ChatColor.AQUA + MoreExpSettings.SlimeExp + ChatColor.WHITE + " Snowman : " + ChatColor.AQUA + MoreExpSettings.SnowmanExp);
-						sender.sendMessage(ChatColor.WHITE + "Spider : " + ChatColor.AQUA + MoreExpSettings.SpiderExp + ChatColor.WHITE + " Squid : " + ChatColor.AQUA + MoreExpSettings.SquidExp + ChatColor.WHITE + " Villager : " + ChatColor.AQUA + MoreExpSettings.VillagerExp + ChatColor.WHITE + " Wolf : " + ChatColor.AQUA + MoreExpSettings.WolfExp);
-						sender.sendMessage(ChatColor.WHITE + "Zombie : " + ChatColor.AQUA + MoreExpSettings.ZombieExp + ChatColor.WHITE + " Zombie Pigman : " + ChatColor.AQUA + MoreExpSettings.PigZombieExp);
+						sender.sendMessage(ChatColor.WHITE + "Spider : " + ChatColor.AQUA + MoreExpSettings.SpiderExp + ChatColor.WHITE + " Squid : " + ChatColor.AQUA + MoreExpSettings.SquidExp + ChatColor.WHITE + " Villager : " + ChatColor.AQUA + MoreExpSettings.VillagerExp + ChatColor.WHITE + " Witch : " + ChatColor.AQUA + MoreExpSettings.WitchExp);
+						sender.sendMessage(ChatColor.WHITE + "Wither : " + ChatColor.AQUA + MoreExpSettings.WitherExp + ChatColor.WHITE + " Wolf : " + ChatColor.AQUA + MoreExpSettings.WolfExp + ChatColor.WHITE + " Zombie : " + ChatColor.AQUA + MoreExpSettings.ZombieExp + ChatColor.WHITE + " Zombie Pigman : " + ChatColor.AQUA + MoreExpSettings.PigZombieExp);
 					}
 					else
 					{
