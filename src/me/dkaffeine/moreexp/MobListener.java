@@ -108,5 +108,11 @@ public class MobListener implements Listener {
 		else if (mob instanceof Villager){
 			event.setDroppedExp(MoreExpSettings.ComputeXP(MoreExpSettings.VillagerExp, MoreExpSettings.VillagerExpRand));
 		}
+		else if (mob instanceof Witch){
+			event.setDroppedExp(MoreExpSettings.ComputeXP(MoreExpSettings.WitchExp, MoreExpSettings.WitchExpRand));
+		}
+		else if (mob instanceof Wither){
+			event.setDroppedExp(MoreExpSettings.ComputeXP(MoreExpSettings.WitherExp, MoreExpSettings.WitherExpRand));
+		}
 	}
 }
