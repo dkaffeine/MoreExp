@@ -1,7 +1,9 @@
 name: MoreExp
-main: me.dkaffeine.moreexp.MoreExpMain
-version: 2.4
-
+main: me.dkaffeine.moreexp.MoreExp
+version: 3.4
+description: Fully configurable XP drop control.
+website: http://dev.bukkit.org/server-mods/more-experience-drops-plugin
+dev-url: http://dev.bukkit.org/server-mods/more-experience-drops-plugin
 commands:
     moreexp:
         description: General command for this plugin

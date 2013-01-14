@@ -1,3 +1,81 @@
+Version 3.4
+* Plugin compiled for Craftbukkit 1.4.5
+* [Feature] Added permission moreexp.usr.mob to grant custom experience for mobs
+* [Feature] Added permission moreexp.usr.block to grant custom experience for block breaking
+* [Feature] Added description / links in plugin.yml (thx LHammonds)
+* [Feature] Added Wither
+* [Feature] Added Witch
+* [TODO] Add test event.getBlock().getDrops().contains() (thx ChrisMintjes92 / CubeNation for the idea)
+* Flag DisableMobFlag is tested before permission moreexp.usr.mob
+* Flag DisableOreFlag is tested before permission moreexp.usr.block
+
+Version 3.3r
+* Forgot to remove debug output
+
+Version 3.3
+* [Feature] Added custom ore experience (parameters CustomOreXX and CustomOreXXRand, where XX is block ID)
+* [Feature] Custom ore experience drop is linked to flag DisableOreFlag
+* [Feature] Added command /mex setcustom to set custom block experience (permission moreexp.adm.set)
+* [Feature] Added command /mex delcustom to unset custom block experience (permission moreexp.adm.set)
+* [Feature] Added command /mex info custom to see custom experience drop
+* Note: already defined blocks (e.g. iron ore) won't take into account custom values. The two methods will be merged in a future release.
+
+Version 3.2
+* Added glowstone implementation
+
+Version 3.1
+* Plugin compiled for Craftbukkit 1.3.2
+
+Version 3.0
+* Totally rewritten the code
+* Added version printing to outputs
+* Changed command test to make the plugin more efficient
+* Changed breaking block test to fit with block ID
+* Changed /moreexp set to modify options (e.g. /moreexp set DisableMobFlag true)
+* Removed specific mob display
+* [Bug Fix] If DisableBottleFlag is set to true, force event experience drop to be equal to 0
+* [Bug Fix] Gold ore has now good flag in data file (was previously Coal ore)
+* [Bug Fix] Redstone ore / glowstone redstone ore now have the same experience drop
+* [Bug Fix] Disable printing of mob experience if associated option is deactivated
+* [Feature] Modified reading/writing method to decrease (slightly) memory usage and add more easily new mobs with future versions of Minecraft 
+* [Feature] On first load, if DisableMobFlag is set to true, associated listener is not registered (decreases memory use and increases server execution time)
+* [Feature] Added message error when mob entity does not exists
+* [Feature] Added ore experience output (/moreexp info ore)
+* [Feature] Added /moreexp reinit to revert plugin configuration to default state (associated permission: moreexp.sadm.reinit)
+* [Feature] /moreexp reinit creates a backup of file before saving, then you can revert this command under problem (e.g. admin issue)
+* [Feature] Added display error when permission is not true
+* [Debug flag added] When killing a Slime, debug reports the size of the Slime
+* [Debug flag added] When killing a Magma cube, debug reports the size of the Magma Cube
+* [Debug flag] Pushed block break to debug flag
+
+Version 2.7r
+* Release mode
+
+Version 2.7
+* [Bug Fix] Changed testing implementation for ore breaking trigger
+* [Bug Fix / Feature] Global mob output is deactivated if DisableMobFlag is set to true
+* [Feature] Added command /moreexp setoption <option> <value>
+* [Feature] Added command alias /mex setoption <option> <value>
+
+Version 2.6
+* Plugin compiled with Bukkit 1.3.1 R2.0
+
+Version 2.5
+* [Feature] Added possibility to remove experience drop when breaking ore (flag DisableOreFlag)
+* [Feature] Implemented experience modification when someone mines coal ore
+* [Feature] Implemented experience modification when someone mines diamond ore
+* [Feature] Implemented experience modification when someone mines emerald ore
+* [Feature] Implemented experience modification when someone mines gold ore
+* [Feature] Implemented experience modification when someone mines iron ore
+* [Feature] Implemented experience modification when someone mines lapis-lazuli ore
+* [Feature] Implemented experience modification when someone mines redstone ore
+* [Feature] Added additional experience when a player dies (default value: 0)
+* [Known bug] If you get an error in console when mining ore, make sure that you're running CraftBukkit 1.3.1 R1.1 (method does not exists for R1.0)
+
+Version 2.4
+* [Feature updated] Thanks to Endless123's comment, I know that experimental feature of v2.1 works. Broadcast message deactivated
+* [TODO] Add player experience death bonus
+
 Version 2.3
 * Plugin compiled with Bukkit 1.3.1 R0.1
 * [Bug Fix] Reverted option defined in version 2.2b
